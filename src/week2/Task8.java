@@ -6,12 +6,29 @@ public class Task8 {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         if((a % 7 == 0 || b % 7 ==0) && (a >0 && b > 0) && a > b){
-            int x = a - b
-                    if(x%2 == 1){
-                        for(int i= 0; x < 0; i = i - 2){
-
+                    if(a%2 == 1){
+                        for(int i= 0; a > b; i ++){
+                            System.out.println(a);
+                            a = a -2;
                         }
                     }
+                    else{
+                        a = a - 1;
+                        for(int i= 0; a > b; i ++) {
+                            System.out.println(a);
+                            a = a - 2;
+                        }
+                    }
+        }
+        else{
+            if (a % 2 == 0){
+                 for (int i= 0; a > b; i ++){
+                     System.out.println(a);
+                     a = a - 2;
+                 }
+                System.out.println(a);
+            }
+
         }
     }
 }
