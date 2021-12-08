@@ -12,25 +12,25 @@ public class Task8 {
         }
         int max = arr[0];
         int min = arr[0];
-        int maxIndex = 1;
-        int minIndex = 1;
-        for(; maxIndex < arr.length; maxIndex++){
-            if(arr[maxIndex] > max){
-                max = arr[maxIndex];
+        int maxIndex = 0;
+        int minIndex = 0;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+                maxIndex = i;
             }
-        }
-        for(; minIndex < arr.length; minIndex++) {
-            if (arr[minIndex] < min) {
-                min = arr[minIndex];
+            else{
+                if (arr[i] < min) {
+                    min = arr[i];
+                    minIndex = i;
+                }
             }
         }
         int temp = arr[maxIndex];
         arr[maxIndex] = arr[minIndex];
         arr[minIndex] = temp;
-        System.out.println(maxIndex);
-        System.out.println(minIndex);
-        //for(int i = 0; i < arr.length; i++){
-         //   System.out.println(arr[i]);
-       // }
+        for(int i = 0; i < arr.length; i++){
+           System.out.println(arr[i]);
+        }
     }
 }
