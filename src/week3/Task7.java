@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Task7 {
     public static void main(String[] args) {
+       //StringBuilder str = new StringBuilder("dhggft");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int arr[] = new int[n];
@@ -13,7 +14,7 @@ public class Task7 {
         int k = 1;
         for(int i = 0; i < arr.length; i++,k++){
             arr1[i] = arr[n - k];
-            System.out.println(arr1[i]);
+            System.out.print(arr1[i] + " ");
         }
     }
 }
